@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: sans-serif;
+
+}
+
+.landing {
+    height: 100vh;
+    background-image: linear-gradient(rgb(0, 0, 0, .5), rgb(0, 0, 0, .5)), url(/images/landing.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 150px 0px 50px 50px;
+}
+
+h1{
+    font-size: 200px;
+    text-transform: uppercase;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    color: transparent;
+    -webkit-text-stroke: 4px aqua;
+    text-stroke: 4px aqua;
+}
+
+/* Navbar */
+
+.header {
+    padding: 20px;
+    width: 100%;
+    background: rgb(252, 0, 0);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    position: fixed;
+    top: 0;
+  }
+  
+  .header .logo {
+    font-style: italic;
+    font-size: 20px;
+  }
+  .h3 {
+      font-size: 40px;
+      font-weight: bold;
+      margin-left: 40%;
+  }
+  
+  .header .logo span {
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .header nav {
+    color: white;
+  }
+  
+  .header nav a {
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+  
+  .header nav a {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    margin-left: 30px;
+    border-radius: 30px;
+  }
+  
+  .header nav a:hover {
+    opacity: 0.9;
+    color: rgb(255, 0, 0);
+  }
+
+.item-img {
+    height: 100px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    transition: 00.3s ease-in-out;
+}
+
+
+
