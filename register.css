@@ -6,10 +6,11 @@
 }
 
 .heading1 {
-    font-size: 40px;
+    font-size: 30px;
+    color: white;
     font-weight: bolder;
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
+    margin-bottom: 10px;
 }
 
 .body {
@@ -18,42 +19,40 @@
     background-position-x: center;
 }
 
-#inputs{
+#inputs {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     height: 100vh;
+    text-align: center;
+    padding: 2px;
     background-image: url(/images/landing.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    text-align: center;
-    padding: 15px;
 }
 
-.login-section{
-    /* border-style: solid; */
+.register-section{
     border-width: 10px;
-    padding: 5%;
+    padding: 1%;
     border-radius: 5%;
-    /* background-color: rgba(0, 0, 0, 0.267); */
-    background-image:linear-gradient(rgb(0, 0, 0, .5), rgb(0, 0, 0, .5)), url(/images/rims.jpg);
+    background-image:linear-gradient(rgb(0, 0, 0, .5), rgb(0, 0, 0, .5)), url(/images/BMW-BBS.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
     width: 500px;
-    margin: 200px auto;
-    
+    margin: 30px auto;
 }
 
 .contact-label {
     font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
-    color: aqua;
     display: block;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
 }
 
 .button {
@@ -68,20 +67,20 @@
     margin-top: 8px;
 }
 
-form p{
-    color: aqua;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
 .login-input {
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 5%;
 }
 
 .link {
     font: bold;
     color:antiquewhite;
     font-size: 20px;
+    font-weight: bold;
+}
+
+body p {
+    color: aqua;
+    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
 }
