@@ -9,29 +9,29 @@
 </head>
 <body>
     <div id="inputs">
-     <div class="register-section">
+     <form class="register-section">
             <h1 class="heading1">Register Here</h1>
             <div class="name-details">
                 <label class="contact-label">Name :</label>
-                <input class="register-input" type="name" name="name" placeholder="Insert Name here"required/>
+                <input class="register-input" id="name" type="name" name="name" placeholder="Insert Name here"required/>
             </div>
         <div class="surname-details">
             <label class="contact-label">Surname :</label>
-            <input class="register-input" type="surname" name="surname" placeholder="Insert Surname here" required/>
+            <input class="register-input" id="surname" type="surname" name="surname" placeholder="Insert Surname here" required/>
         </div>
         <div class="email-details">
             <label class="contact-label">Email :</label>
-            <input class="login-input" type="email" name="email" placeholder="yourname@domain.com" required/>
+            <input class="login-input" id="email" type="email" name="email" placeholder="yourname@domain.com" required/>
         </div>
         <div>
             <label class="contact-label">Password :</label>
-            <input class="login-input" type="password" name="password" placeholder="password****" required/>
+            <input class="login-input" id="password" type="password" name="password" placeholder="password****" required/>
         </div>
         <button class="button">Register</button>
         <p>
             Do you have an account?  <a class="link" href="/login.html">Login</a>
         </p>
-        </div>
+        </form>
     </div>
 </body>
 </html>

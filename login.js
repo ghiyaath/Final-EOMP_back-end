@@ -1,5 +1,5 @@
 let loginForm = document.querySelector(".login-section");
-let regForm = document.querySelector(".signinbtn");
+let regForm = document.querySelector(".register-section");
 
 
 if (loginForm != null) {
@@ -38,12 +38,12 @@ if (regForm != null) {
     e.preventDefault();
 
     let new_user = {
-      first_name: document.querySelector(".user2").value,
-      last_name: document.querySelector(".user3").value,
-      username: document.querySelector(".user1").value,
-      email_address: document.querySelector(".user4").value,
-      address: document.querySelector(".user5").value,
-      password: document.querySelector(".user6").value,
+      first_name: document.querySelector("#name").value,
+      last_name: document.querySelector("#surname").value,
+      // username: document.querySelector(".user1").value,
+      email_address: document.querySelector("#email").value,
+      // address: document.querySelector(".user5").value,
+      password: document.querySelector("#password").value,
     };
 
     console.log(new_user);
