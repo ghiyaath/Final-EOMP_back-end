@@ -1,0 +1,285 @@
+*,*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 400;
+    background-color: #fff;
+    color: #243a6f;
+    position: relative;
+    z-index: 1;
+}
+
+h1,h2,h3,h4{
+    font-weight: 500;
+}
+
+a {
+    color:inherit;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style-type: none;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.container-md {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+@media screen and  (max-width: 1200px) {
+    .container {
+        padding: 0 3rem;
+    }
+
+    .container-md {
+        padding: 0 3rem;
+    }
+}
+
+.header {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d1e2e9;
+    overflow: hidden; 
+}
+
+.nav {
+    padding:  1.6rem;
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo h1 {
+    font-size: 2.5rem;
+}
+
+.top-nav {
+    display: none;
+}
+.nav-list{
+    display: flex;
+    align-items: center;
+}
+
+.nav-item:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.nav-link:link,
+.nav-link:visited {
+    padding: 0.8rem 1rem;
+    transition: all 300ms ease-in-out;
+}
+.nav-link.icon {
+    font-size: 3rem;
+}  
+
+/* Home */
+
+.header .hero-img {
+    position: absolute;
+    bottom: -10%;
+    right: -5%;
+    height: 70rem;
+    object-fit: contain;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    transform: translate(25%, -50%);
+}
+
+.hero-content h2 {
+    color: #b888ff;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.hero-content .discount {
+    color: #fbb419;
+}
+
+.hero-content h1 span {
+    color: #253b70;
+    font-size: 6rem;
+    font-weight: 700;
+    display: block;
+    line-height: 1;
+    text-shadow: 3px 3px 0 #f1f1f1, 4px 4px 0  #f1f1f1;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #fc7cfc;
+    padding: 1.2rem 4rem;
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 3rem;
+}
+
+@media only screen and (max-width: 1200px)  {
+    .header .hero-img {
+        right: -20%;
+    }
+
+    .hero-content {
+        transform: translate(20%, -50%);
+    }
+
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+
+    .hero-content h1 span {
+        font-size: 5rem;
+    }
+}
+
+@media only screen and (max-width: 996px)  {
+    .header {
+        min-height: 70vh;
+    }
+
+    .header .hero-img {
+        height: 40rem;
+        right: -10%;
+    }
+}
+
+@media only screen and (max-width: 567px)  {
+    .header {
+        min-height: 100vh;
+    }
+
+    .header .hero-img {
+        bottom: -15%;
+        right: 0;
+    }
+
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-content h1 span {
+        font-size: 4rem;
+    }
+
+    .hero-content a {
+        padding: 1rem 3rem;
+    }
+}
+
+/* Advert */
+
+.section {
+    padding: 10rem 0 5rem;
+}
+
+.advert-center {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 3rem;
+}
+
+.advert-box {
+    position: relative;
+    color: #fff;
+    height: 27rem;
+    border-radius: 1.6rem;
+    padding: 1.6rem;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.advert-box img{
+    position: absolute;
+    bottom: 0;
+    left: -20%;
+    height: 100%;
+    width: 35rem;
+    z-index: -1;
+}
+
+.advert-box:nth-child(1) {
+    background-color: #f5c5d1;
+}
+
+.advert-box:nth-child(2) {
+    background-color: #a1d1df;
+}
+
+.advert-box:nth-child(3) {
+    background-color: #e5bc00;
+}
+
+.advert-box:nth-child(4) {
+    background-color: #a1d1df;
+}
+
+.advert-box:nth-child(5) {
+    background-color: #e5bc00;
+}
+
+.advert-box:nth-child(6) {
+    background-color: #f5c5d1;
+}
+
+.advert-box .dotted {
+    position: relative;
+    height: 100%;
+    border: 2px dashed #f1f1f1;
+    border-radius: 1rem;
+}
+
+.advert-box .content {
+    position: absolute;
+    top: 50%;
+    right: 5%;
+    transform: translate(0, -50%);
+}
+ 
+.advert-box .content h2,
+.advert-box .content h4 {
+    text-shadow: 5px 6px 0px rgba(37, 59, 112, 0.1);
+}
+
+.advert-box .content h2 {
+    line-height: 1.2;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.advert-box .content h4{
+    font-size: 1.5rem;
+    text-transform: capitalize;
+}
