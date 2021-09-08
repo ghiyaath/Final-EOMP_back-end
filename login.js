@@ -95,7 +95,7 @@ function register() {
 }
 
 // LOGIN
-fetch("https://ecommerce-final-eomp.herokuapp.com/")
+fetch("https://hot-wheels-final.herokuapp.com/user-registration/")
   .then((res) => res.json())
   .then((data) => {
     console.log(data);
@@ -103,15 +103,15 @@ fetch("https://ecommerce-final-eomp.herokuapp.com/")
 
 function login() {
   // GETTING DATA FROM FORM
-  let email = document.querySelector("#email").value;
+  let username = document.querySelector("#username").value;
   let password = document.querySelector("#password").value;
-  console.log(email, password);
+  console.log(username, password);
 
   //   SEND DATA TO API
-  fetch("https://ecommerce-final-eomp.herokuapp.com/users/", {
+  fetch("https://hot-wheels-final.herokuapp.com/user-login/", {
     method: "PATCH",
     body: JSON.stringify({
-      email,
+      username,
       password,
     }),
     headers: {
@@ -121,11 +121,6 @@ function login() {
     .then((res) => res.json())
     .then((res) => {
       console.log(res);
-      if (!res.data) {
-        console.log("Error");
-      } else {
-        localStorage.setItem("user", JSON.stringify(res.data));
-        window.location = "./landing.html";
-      }
+      window.location = "./landing.html";
     });
 }

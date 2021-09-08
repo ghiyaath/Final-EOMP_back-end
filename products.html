@@ -8,47 +8,20 @@
     <link rel="stylesheet" href="/products.css" />
   </head>
   <body>
-    <!-- Header -->
-    <header id="home" class="header">
-      <!-- Navigation -->
-      <nav class="nav"></nav>
-      <div class="navigation container">
-        <div class="logo">
-          <h1>HotWheels™</h1>
-        </div>
-        <div class="menu">
-          <div class="top-nav">
-            <div class="logo">
-              <h1 class="hot-h1">HotWheels™</h1>
-            </div>
-            <div class="close">
-              <i class="fa fa-window-close" aria-hidden="true"></i>
-            </div>
-          </div>
-
-          <!-- <ul class="nav-list">
-                    <li class="na-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="na-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="na-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="na-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="na-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                    <li class="na-item">
-                        <a href="#home" class="nav-link">Home</a>
-                    </li>
-                </ul> -->
-        </div>
+    <!-- Navbar -->
+    <div class="header">
+      <div class="logo">
+        <h3 class="h3"><span>Yaatie's</span>HotWheels™</h3>
       </div>
-
+      <nav>
+        <a href="/login.html">Login</a>
+        <a href="/register.html">Register</a>
+        <a href="/products.html">Products</a>
+        <a href="">Cart</a>
+      </nav>
+    </div>
+    <!-- Header -->
+    <header id="home">
       <!-- Hero -->
       <img
         src="/images/marcelo-cid-OtJVan-Fm3A-unsplash.jpg"
@@ -150,6 +123,48 @@
         </div>
       </section>
     </main>
+    <div id="contact">
+      <form
+        class="contact-form"
+        action="https://formspree.io/f/xoqyyrop"
+        method="POST"
+      >
+        <input
+          class="form-details"
+          type="text"
+          name="name"
+          id="contact-name"
+          placeholder="Full Name"
+          requried
+        />
+        <input
+          class="form-details"
+          type="email"
+          name="email"
+          id="contact-email"
+          placeholder="email@domain.com"
+          requried
+        />
+        <input
+          class="form-details"
+          type="tel"
+          name="number"
+          id="contact-number"
+          placeholder="072 123 4567"
+          requried
+        />
+        <input
+          class="form-details"
+          type="text"
+          name="description"
+          id="message"
+          placeholder="Write your message here"
+        />
+        <button type="submit" id="contact-button">Add</button>
+        <button type="submit" id="contact-button">Update</button>
+        <button type="submit" id="contact-button">Delete</button>
+      </form>
+    </div>
     <script src="/products.js"></script>
   </body>
 </html>
