@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products</title>
     <link rel="stylesheet" href="/products.css" />
+    <script
+      src="https://kit.fontawesome.com/0522e0a34c.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <!-- Navbar -->
@@ -18,153 +22,57 @@
         <a href="/register.html">Register</a>
         <a href="/products.html">Products</a>
         <a href="">Cart</a>
+        <a href="./add.html"><i class="fas fa-plus"></i></a>
       </nav>
     </div>
     <!-- Header -->
-    <header id="home">
-      <!-- Hero -->
-      <img
-        src="/images/marcelo-cid-OtJVan-Fm3A-unsplash.jpg"
-        class="hero-img"
-      />
-
-      <div class="hero-content">
-        <h2><span class="disount">30%</span> SALE OFF</h2>
-        <h1>
-          <span>Hotwheels</span>
-          <span>A better way forward</span>
-        </h1>
-        <a href="#" class="btn">Shop now</a>
-      </div>
-    </header>
-
     <!-- Main -->
-    <main>
-      <section class="section advert">
-        <div class="advert-center container">
-          <div class="advert-box">
-            <div class="dotted">
-              <div class="content">
-                <h2>
-                  BBS <br />
-                  Rim set
-                </h2>
-                <h4>R7 500.00</h4>
-              </div>
-            </div>
-            <img src="/images/BMW-BBS.jpg" alt="" />
-          </div>
-          <!-- ad 2 -->
-          <div class="advert-box">
-            <div class="dotted">
-              <div class="content">
-                <h2>
-                  BBS <br />
-                  Rim set
-                </h2>
-                <h4>R8 250.00</h4>
-              </div>
-            </div>
-            <img src="/images/bbs tyre .jpg" alt="" />
-          </div>
-          <!-- ad 3 -->
+    <section class="section advert"></section>
+    <section>
+      <div id="contact">
+        <form
+          class="contact-form"
+          action="https://formspree.io/f/xoqyyrop"
+          method="POST"
+        >
+          <input
+            class="form-details"
+            type="text"
+            name="name"
+            id="contact-name"
+            placeholder="Full Name"
+            requried
+          />
+          <input
+            class="form-details"
+            type="email"
+            name="email"
+            id="contact-email"
+            placeholder="email@domain.com"
+            requried
+          />
+          <input
+            class="form-details"
+            type="tel"
+            name="number"
+            id="contact-number"
+            placeholder="072 123 4567"
+            requried
+          />
+          <input
+            class="form-details"
+            type="text"
+            name="description"
+            id="message"
+            placeholder="Write your message here"
+          />
+          <button type="submit" id="contact-button">Add</button>
+          <button type="submit" id="contact-button">Update</button>
+          <button type="submit" id="contact-button">Delete</button>
+        </form>
+      </div>
+    </section>
 
-          <div class="advert-box">
-            <div class="dotted">
-              <div class="content">
-                <h2>
-                  BBS<br />
-                  Rim set
-                </h2>
-                <h4>R5 500</h4>
-              </div>
-            </div>
-            <img src="/images/bbs single rim.jpg" alt="" />
-          </div>
-          <!-- Ad 4 -->
-          <div class="advert-box">
-            <div class="dotted">
-              <div class="content">
-                <h2>
-                  BBS <br />
-                  Rim set
-                </h2>
-                <h4>R6 880.00</h4>
-              </div>
-            </div>
-            <img src="/images/new4.jpg" alt="" />
-          </div>
-          <!-- Ad 5 -->
-          <div class="advert-box">
-            <div class="dotted">
-              <div class="content">
-                <h2>
-                  BBS <br />
-                  Rim set
-                </h2>
-                <h4>R7 420.00</h4>
-              </div>
-            </div>
-            <img src="/images/new2.jpg" alt="" />
-          </div>
-          <!-- Ad 6 -->
-          <div class="advert-box">
-            <div class="dotted">
-              <div class="content">
-                <h2>
-                  BBS <br />
-                  Rim set
-                </h2>
-                <h4>R6 450.00</h4>
-              </div>
-            </div>
-            <img src="/images/new5.jpg" alt="" />
-          </div>
-        </div>
-      </section>
-    </main>
-    <div id="contact">
-      <form
-        class="contact-form"
-        action="https://formspree.io/f/xoqyyrop"
-        method="POST"
-      >
-        <input
-          class="form-details"
-          type="text"
-          name="name"
-          id="contact-name"
-          placeholder="Full Name"
-          requried
-        />
-        <input
-          class="form-details"
-          type="email"
-          name="email"
-          id="contact-email"
-          placeholder="email@domain.com"
-          requried
-        />
-        <input
-          class="form-details"
-          type="tel"
-          name="number"
-          id="contact-number"
-          placeholder="072 123 4567"
-          requried
-        />
-        <input
-          class="form-details"
-          type="text"
-          name="description"
-          id="message"
-          placeholder="Write your message here"
-        />
-        <button type="submit" id="contact-button">Add</button>
-        <button type="submit" id="contact-button">Update</button>
-        <button type="submit" id="contact-button">Delete</button>
-      </form>
-    </div>
-    <script src="/products.js"></script>
+    <script src="./products.js"></script>
   </body>
 </html>

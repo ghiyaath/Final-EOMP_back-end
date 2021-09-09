@@ -1,5 +1,5 @@
 function getProduct() {
-  let container = document.querySelector(".advert-center.container");
+  let container = document.querySelector(".section.advert");
 
   fetch("https://hot-wheels-final.herokuapp.com//show-products/")
     .then((response) => response.json())
@@ -10,43 +10,16 @@ function getProduct() {
 
       container.innerHTML = "";
       products.forEach((product) => {
-        container.innerHTML += createCards(product);
+        container.innerHTML += `
+        <div class="product-card">
+          <img class="product-image" src="${product[2]}"/>
+          <h3 class="catergory">${product[5]}</h3>
+          <h1 class="product-name">${product[1]}</h1>
+          <h5 class="price">${product[4]}</h5>
+        </div>
+      `;
       });
     });
 }
 
 getProduct();
-
-function createCards(card) {
-  // let images = {
-  //   "url": ""
-  // }
-  console.log(card);
-  return `<div class="advert-box"><div class="advert-box">
-  <div class="dotted">
-    <div class="content">
-      <h2>
-        BBS <br />
-        Rim set
-      </h2>
-      <h4>R8 250.00</h4>
-    </div>
-  </div>
-  <img src="/images/bbs tyre .jpg" alt="" />
-</div>
-    <div class="dotted">
-      <div class="content">
-        <h2>
-          BBS <br />
-          Rim set
-        </h2>
-        <h4>R8 250.00</h4>
-      </div>
-    </div>
-    <img src="/images/bbs tyre .jpg" alt="" />
-  </div>`;
-}
-
-function get1Product(cardId) {
-  console.log(cardId);
-}
