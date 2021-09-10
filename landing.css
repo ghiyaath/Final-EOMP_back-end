@@ -129,19 +129,21 @@ h1 {
   transition: 00.3s ease-in-out;
 }
 
-/* footer {
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    background: rgba(22, 22, 22, 1);
-    justify-content: space-between;
-    padding: 20px;
-} */
+footer {
+  /* width: 100vw; */
+  display: flex;
 
-/* .brent-footer {
-  height: 7%;
+  align-items: center;
+  background: rgb(94, 94, 94);
+  justify-content: space-between;
+  padding: 20px;
+  /* font: aqua; */
+}
+.the-footer {
+  height: 10%;
   color: white;
-  background: black;
+  background: rgb(0, 0, 0);
   display: grid;
   place-items: center;
-} */
+  color: aqua;
+}
