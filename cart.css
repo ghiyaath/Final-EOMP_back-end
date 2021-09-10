@@ -9,7 +9,7 @@
 .header {
   padding: 20px;
   width: 100%;
-  /* background: rgb(252, 0, 0); */
+  background: silver;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -17,6 +17,8 @@
   align-items: center;
   position: fixed;
   top: 0;
+  /* color: aqua; */
+  /* height: 20%; */
 }
 
 .header .logo {

@@ -121,6 +121,6 @@ function login() {
     .then((res) => res.json())
     .then((res) => {
       console.log(res);
-      window.location = "./landing.html";
+      window.location = "./index.html";
     });
 }
