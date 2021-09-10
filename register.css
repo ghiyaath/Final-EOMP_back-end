@@ -10,7 +10,7 @@
 .header {
   padding: 20px;
   width: 100%;
-  /* background: rgb(252, 0, 0); */
+  background: transparent;
   text-align: center;
   display: flex;
   flex-direction: row;
@@ -51,7 +51,7 @@
 
 .header nav a {
   color: white;
-  background-color: rgb(255, 255, 255);
+  /* background-color: rgb(255, 255, 255); */
   margin-left: 20px;
   border-radius: 30px;
   font-size: 17px;
